@@ -15,7 +15,12 @@ li {
     margin-bottom: 4px;
 }
 
-.recomandee {
+.recommandee {
     font-weight: bold;
     color: seagreen;
+}
+
+.deconseillee {
+    font-weight: bold;
+    color: indianred;
 }
