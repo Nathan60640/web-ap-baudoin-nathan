@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    color: darkslategray;
+}
+
+h1 {
+    color: steelblue;
+}
+
+h2 {
+    color: teal;
+}
+
+li {
+    margin-bottom: 4px;
+    color: black;
+}
+
+#race-vedette {
+    color: purple;
+}
+
+#race-deconseillee {
+    color: indianred;
+}
+
+.recommandee {
+    font-weight: bold;
+    color: seagreen;
+}
+
+.deconseillee {
+    font-weight: bold;
+    color: indianred;
+}
+
+.alimentation {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #f7f9fa;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.alimentation li {
+    padding: 15px 20px;
+    color: #2d3748;
+    font-family: sans-serif;
+    line-height: 1.5;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.alimentation li:hover {
+    background-color: #2ecc71;
+    color: #ffffff;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 16px;
+}
+
+nav a {
+    color: darkslategray;
+    text-decoration: none;
+}
+
+nav a:visited {
+    color: darkslategray;
+}
+
+nav a:hover {
+    color: seagreen;
+    text-decoration: underline;
+}
