@@ -86,12 +86,15 @@ figure {
     border: 2px solid steelblue;
     padding: 8px;
     margin: 16px 0;
+    background-color: #E8E8E8;
     width: fit-content;
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.6);
     /* Force le cadre à s'adapter à la largeur de son contenu */
 }
 
 img {
     width: 200px;
+    height: auto;
 }
 
 figcaption {
