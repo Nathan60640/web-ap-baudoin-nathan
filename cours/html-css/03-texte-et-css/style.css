@@ -24,3 +24,27 @@ li {
     font-weight: bold;
     color: indianred;
 }
+
+.alimentation {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #f7f9fa;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.alimentation li {
+    padding: 15px 20px;
+    color: #2d3748;
+    font-family: sans-serif;
+    line-height: 1.5;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.alimentation li:hover {
+    background-color: #2ecc71;
+    color: #ffffff;
+}
