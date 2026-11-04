@@ -1,0 +1,218 @@
+/* ==========================================================================
+   1. VARIABLES & CONFIGURATION GENERALE
+   ========================================================================== */
+:root {
+    --gold: #d4af37;
+    --gold-light: #f3e5ab;
+    --dark-bg: #0b111e;
+    --card-bg: #131c2e;
+    --text-main: #f4f6f9;
+    --text-muted: #8a99ad;
+    --nav-hover: #1e2d4a;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background-color: var(--dark-bg);
+    color: var(--text-main);
+    line-height: 1.7;
+    padding-bottom: 60px;
+}
+
+/* ==========================================================================
+   2. HEADER & NAVIGATION
+   ========================================================================== */
+header {
+    background: linear-gradient(135deg, #070b14 0%, #131c2e 100%);
+    padding: 30px 20px;
+    text-align: center;
+    border-bottom: 2px solid var(--gold);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    font-size: 2.8rem;
+    color: var(--gold);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    font-weight: 800;
+    text-shadow: 0 2px 10px rgba(212, 175, 55, 0.2);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+nav ul li a {
+    color: var(--text-main);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--gold);
+    background-color: var(--nav-hover);
+    border-color: rgba(212, 175, 55, 0.3);
+}
+
+/* ==========================================================================
+   3. CONTENU PRINCIPAL (MAIN & SECTIONS)
+   ========================================================================== */
+main {
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+section {
+    background-color: var(--card-bg);
+    padding: 35px;
+    margin-bottom: 35px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-2px);
+    border-color: rgba(212, 175, 55, 0.15);
+}
+
+section h2 {
+    color: var(--gold);
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 8px;
+}
+
+section h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background-color: var(--gold);
+    border-radius: 2px;
+}
+
+section p {
+    color: var(--text-main);
+    font-size: 1.05rem;
+    margin-bottom: 20px;
+}
+
+em {
+    color: var(--gold-light);
+    font-style: italic;
+}
+
+strong {
+    color: var(--gold);
+    font-weight: 700;
+}
+
+/* ==========================================================================
+   4. LISTES (EVOLUTIONS CHRONOLOGIQUES)
+   ========================================================================== */
+ul {
+    list-style: none;
+}
+
+section#evolutions ul li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 18px;
+    color: var(--text-main);
+}
+
+section#evolutions ul li::before {
+    content: "■";
+    position: absolute;
+    left: 0;
+    color: var(--gold);
+    font-size: 0.8rem;
+    top: 1px;
+}
+
+section#evolutions ul li strong {
+    display: inline-block;
+    color: var(--gold-light);
+    margin-right: 5px;
+}
+
+/* ==========================================================================
+   5. FOOTER
+   ========================================================================== */
+footer {
+    text-align: center;
+    padding: 30px 20px;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    background-color: #070b14;
+}
+
+/* ==========================================================================
+   6. TABLEAUX (RECORDS DES JOUEURS)
+   ========================================================================== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 25px;
+    font-size: 0.95rem;
+    background-color: rgba(255, 255, 255, 0.02);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th,
+td {
+    padding: 14px 18px;
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+th {
+    background-color: #070b14;
+    color: var(--gold);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+}
+
+td {
+    color: var(--text-main);
+}
+
+/* Effet de survol sur les lignes du tableau */
+tr:hover td {
+    background-color: rgba(212, 175, 55, 0.05);
+    color: #fff;
+}
+
+/* Style pour l'onglet actif dans le menu */
+nav ul li a.active {
+    background-color: var(--nav-hover);
+    color: var(--gold);
+    border-color: rgba(212, 175, 55, 0.4);
+}
