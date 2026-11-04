@@ -128,6 +128,7 @@ select,
 textarea {
     border: 1px solid darkslategray;
     padding: 4px;
+    background-color: white;
 }
 
 input:focus,
@@ -137,10 +138,16 @@ textarea:focus {
     outline-offset: 1px;
 }
 
-input:valid {
+input:user-valid,
+select:user-valid,
+textarea:user-valid {
     border-color: seagreen;
+    background-color: #f4faf6;
 }
 
-input:invalid {
+input:user-invalid,
+select:user-invalid,
+textarea:user-invalid {
     border-color: crimson;
+    background-color: #fff5f5;
 }
